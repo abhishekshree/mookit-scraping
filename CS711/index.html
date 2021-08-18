@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://hello.iitk.ac.in/cs711a21/#/home -->
+<html lang="en" class="SI-FILES-STYLIZED"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style><title id="courseTitle">CS711A: Introduction To Game Theory And Mechanism Design</title><!--<base href="/cs711a21/">--><base href="."><meta name="viewport" content="width=device-width,initial-scale=1"><!-- Handling cache issue --><meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="expires" content="0"><!-- Handling cache issue end here --><link rel="shortcut icon" id="courseFavicon" href="./CS711A_ Introduction To Game Theory And Mechanism Design_files/iitklogo.png"><link href="./CS711A_ Introduction To Game Theory And Mechanism Design_files/css" type="text/css"><link href="./CS711A_ Introduction To Game Theory And Mechanism Design_files/video-js.css" rel="stylesheet"><!-- If you'd like to support IE8 (for Video.js versions prior to v7) --><script type="text/javascript" id="www-widgetapi-script" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/www-widgetapi.js.download" async=""></script><script type="text/javascript" async="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/analytics.js.download"></script><script src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/videojs-ie8.min.js.download"></script><script src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/video.js.download"></script><script src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/videojs-contrib-hls.min.js.download"></script><script async="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175298745-1');
+</script><link href="./CS711A_ Introduction To Game Theory And Mechanism Design_files/styles.80b9aa6463aacc58b417.bundle.css" rel="stylesheet"><style>.cke{visibility:hidden;}</style><style></style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><script src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/iframe_api" type="text/javascript"></script><script type="text/javascript" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/pdf.js.download"></script></head><body data-new-gr-c-s-check-loaded="14.1026.0" data-gr-ext-installed=""><div id="MathJax_Message" style="display: none;"></div><app-root _nghost-c0="" ng-version="5.2.9"><div _ngcontent-c0="" class="bigContainer">
+    <div _ngcontent-c0="" class="courseTitleTopBox">
+        <div _ngcontent-c0="" class="overlayDiv"></div>
+        <div _ngcontent-c0="" class="sideMenuButton">
+            <div _ngcontent-c0="" class="firstBar"></div>
+            <div _ngcontent-c0="" class="secondBar"></div>
+            <div _ngcontent-c0="" class="thirdBar"></div>
+        </div>
+        <div _ngcontent-c0="" class="courseIconBox">
+            <a _ngcontent-c0="" target="_blank" href="https://hello.iitk.ac.in/">
+                <img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/iitklogo.png">
+            </a>
+        </div>
+
+        <div _ngcontent-c0="" class="courseTitleAndDescriptionBox">
+            <div _ngcontent-c0="" class="courseTitle">
+                <span _ngcontent-c0="">CS711A: Introduction To Game Theory And Mechanism Design</span>
+            </div>
+            <span _ngcontent-c0="" id="timer" style="float: right; color: black;"></span>
+            <div _ngcontent-c0="" class="courseDescription">
+                <span _ngcontent-c0="" class="displayOnlineUser"> 
+                    <span _ngcontent-c0="" class="onlineUserText">Users Online : </span>12
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!---->
+
+</div>
+
+<div _ngcontent-c0="" class="bigContainer">
+    <ul _ngcontent-c0="" class="sideMenuBar">
+        <li _ngcontent-c0="" class="sideMenuBarOption">
+            <a _ngcontent-c0="" class="homeBar active" routerlinkactive="active" href="https://hello.iitk.ac.in/cs711a21/#/home">
+                <div _ngcontent-c0="" class="sideMenuBarAnimationBox"></div>
+                <img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/SideMenuHome@2X-01.png">
+                <span _ngcontent-c0="" class="sideMenuBarOptionText"><span _ngcontent-c0="" class="contentPageHome">Course Home</span></span>
+            </a>
+        </li>
+
+        
+
+        <li _ngcontent-c0="" class="sideMenuBarOption" id="announcementButton">
+            <a _ngcontent-c0="" class="announcementBar" routerlinkactive="active" href="https://hello.iitk.ac.in/cs711a21/#/announcements">
+                <div _ngcontent-c0="" class="sideMenuBarAnimationBox"></div>
+                <img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/SideMenuAnnouncements@2X-01.png">
+                <span _ngcontent-c0="" class="sideMenuBarOptionText" style="white-space: nowrap;overflow: hidden;">
+                    <span _ngcontent-c0="" class="contentPageAnnouncements">Announcements</span>
+                <span _ngcontent-c0="" class="newAnnouncementForum" id="announcementButtonText" style="display: none;"></span>
+                </span>
+            </a>
+        </li>
+        <li _ngcontent-c0="" class="sideMenuBarOption">
+            <a _ngcontent-c0="" class="resourcesBar" routerlinkactive="active" href="https://hello.iitk.ac.in/cs711a21/#/resources">
+                <div _ngcontent-c0="" class="sideMenuBarAnimationBox"></div>
+                <img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/SideMenuResources@2X-01.png">
+                <span _ngcontent-c0="" class="sideMenuBarOptionText"><span _ngcontent-c0="" class="contentPageResources">Resources</span></span>
+            </a>
+        </li>
+        <li _ngcontent-c0="" class="sideMenuBarOption" id="forumButton">
+            <a _ngcontent-c0="" class="forumsBar" routerlinkactive="active" href="https://hello.iitk.ac.in/cs711a21/#/forums">
+                <div _ngcontent-c0="" class="sideMenuBarAnimationBox"></div>
+                <img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/SideMenuForums@2X-01.png">
+                <span _ngcontent-c0="" class="sideMenuBarOptionText" style="white-space: nowrap;overflow: hidden;">
+                    <span _ngcontent-c0="" class="contentPageForums">Forums</span>
+                <span _ngcontent-c0="" class="newAnnouncementForum" id="forumButtonText" style="display: none;"></span>
+                </span>
+            </a>
+        </li>
+
+        <li _ngcontent-c0="" class="sideMenuBarOption chatClass">
+            <a _ngcontent-c0="">
+                <div _ngcontent-c0="" class="sideMenuBarAnimationBox"></div>
+                <img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/SideMenuChat@2X-01.png">
+                <span _ngcontent-c0="" class="sideMenuBarOptionText"><span _ngcontent-c0="" class="contentPageHangout">Hangout</span></span>
+            </a>
+        </li>
+        <br _ngcontent-c0="">
+        <br _ngcontent-c0="">
+        <li _ngcontent-c0="" class="sideMenuBarOption">
+            <a _ngcontent-c0="" class="profileBar" routerlinkactive="active" href="https://hello.iitk.ac.in/cs711a21/#/profile/26743">
+                <div _ngcontent-c0="" class="sideMenuBarAnimationBox"></div>
+                <img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/SideMenuProfile@2X-01.png">
+                <span _ngcontent-c0="" class="sideMenuBarOptionText"><span _ngcontent-c0="" class="contentPageMyProfile">My Profile</span></span>
+            </a>
+        </li>
+
+        <li _ngcontent-c0="" class="sideMenuBarOption">
+            <a _ngcontent-c0="" class="navigationBar logoutSideButton">
+                <div _ngcontent-c0="" class="sideMenuBarAnimationBox"></div>
+                <img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/SideMenuLogout@2X-01.png">
+                <span _ngcontent-c0="" class="sideMenuBarOptionText"><span _ngcontent-c0="" class="contentPageLogout">Logout</span></span>
+            </a>
+        </li>
+        <br _ngcontent-c0=""><br _ngcontent-c0="">
+        <li _ngcontent-c0="" class="sideMenuBarOption">
+            <a _ngcontent-c0="" class="profileBar" routerlinkactive="active" href="https://hello.iitk.ac.in/cs711a21/#/help-video">
+               <div _ngcontent-c0="" class="sideMenuBarAnimationBox"></div>
+              <div _ngcontent-c0="" class="helpImage"> <img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/Help Icon-1.png"></div>
+               <span _ngcontent-c0="" class="sideMenuBarOptionText"><span _ngcontent-c0="" class="createHelpButton">Help</span></span>
+            </a>
+        </li>
+        <li _ngcontent-c0="" class="sideMenuBarOption">
+            <a _ngcontent-c0="" class="feedbackBar" routerlinkactive="active" href="https://hello.iitk.ac.in/cs711a21/#/feedback">
+               <div _ngcontent-c0="" class="sideMenuBarAnimationBox"></div>
+              <div _ngcontent-c0="" class="helpImage"> <img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/SideMenuFeedback.png"></div>
+               <span _ngcontent-c0="" class="sideMenuBarOptionText"><span _ngcontent-c0="" class="createHelpButton">Feedback</span></span>
+            </a>
+        </li>
+        <br _ngcontent-c0="">
+        <li _ngcontent-c0="" class="sideMenuBarOption">
+            <a _ngcontent-c0="" class="feedbackBar">
+               
+              <div _ngcontent-c0="" class="helpImage"> <img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/BackButton.png" style="margin-left: 0px;"></div>
+               <span _ngcontent-c0="" class="sideMenuBarOptionText"><span _ngcontent-c0="" class="createHelpButton"><b _ngcontent-c0="">Back to Portal</b></span></span>
+            </a>
+        </li>
+        
+        <li _ngcontent-c0="" class="selectLanguage" style="margin-top:25px;margin-bottom:5px; ">
+            <div _ngcontent-c0="" class="selectLanguageLabel">
+                <span _ngcontent-c0="" class="contentPageSelectLanguage">Select Language</span>
+            </div>
+            <select _ngcontent-c0="" class="ng-untouched ng-pristine ng-valid">
+                <!----><option _ngcontent-c0="" value="english">English</option><option _ngcontent-c0="" value="hindi">हिन्दी</option><option _ngcontent-c0="" value="kannada">ಕನ್ನಡ</option><option _ngcontent-c0="" value="french">Français</option><option _ngcontent-c0="" value="russian">Russian</option><option _ngcontent-c0="" value="ukranian">Ukranian</option>
+            </select>
+        </li>
+
+        
+
+        <li _ngcontent-c0="" class="poweredByBox">
+            <div _ngcontent-c0="">powered by</div>
+            <a _ngcontent-c0="" href="http://mookit.co/" target="_blank"><img _ngcontent-c0="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/logomooKIT@2X-01.png">
+            </a>
+        </li>
+    </ul>
+   
+    
+    <div _ngcontent-c0="" class="courseHomeBox">
+        <div _ngcontent-c0="" class="loaderWrapper" style="display: none;">
+            <div _ngcontent-c0="" class="loaderInlineWrapper">
+                <div _ngcontent-c0="" class="homeSpinner">
+                    <div _ngcontent-c0="" class="spinner"></div>
+                </div>
+            </div>
+        </div>
+        <div _ngcontent-c0="" class="loaderInverseWrapper" style="">
+            <router-outlet _ngcontent-c0=""></router-outlet><app-home _nghost-c2=""><div _ngcontent-c2="" class="advertisement" style="display: none;">
+    <marquee _ngcontent-c2="" onmouseout="this.setAttribute(&#39;scrollamount&#39;, 2, 0);this.start();" behavior="scroll" direction="left" id="myMarquee" onmouseover="this.setAttribute(&#39;scrollamount&#39;, 0, 0);this.stop();" scrollamount="3">
+        <span _ngcontent-c2=""></span>
+    </marquee>
+</div>
+<!----><div _ngcontent-c2="">
+    <div _ngcontent-c2="" class="weekItem">
+        <div _ngcontent-c2="" class="triangleWrapper">
+            <img _ngcontent-c2="" class="triangleIcon" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/triangleRight@2X-01.png">
+        </div>
+        <div _ngcontent-c2="" class="weekWrapper">
+            Week 0
+        </div>
+    </div>
+
+    <div _ngcontent-c2="" class="weekDetailsBox" style="display: none;">
+        <ul _ngcontent-c2="" class="weekList">
+            <!----><li _ngcontent-c2="">
+                <span _ngcontent-c2="" class="weekListItemTitle">
+                    <span _ngcontent-c2="" class="unicodeBulletForList">•</span>Introduction
+                </span>
+
+                <!----><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/13">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    First meeting -- Aug 04, 2021
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">41:39</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/CS711_videolecture_preamble.pdf?userid=26743&amp;lid=13&amp;filename=CS711_videolecture_preamble.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span>
+            </li>
+        </ul>
+    </div>
+</div><div _ngcontent-c2="">
+    
+    <div _ngcontent-c2="" class="weekItem">
+        <div _ngcontent-c2="" class="triangleWrapper">
+            <img _ngcontent-c2="" class="triangleIcon" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/triangleRight@2X-01.png">
+        </div>
+        <div _ngcontent-c2="" class="weekWrapper">
+            Week 1
+        </div>
+    </div>
+    <div _ngcontent-c2="" class="weekDetailsBox" style="display: none;">
+        <ul _ngcontent-c2="" class="weekList">
+            <!----><li _ngcontent-c2="">
+                <span _ngcontent-c2="" class="weekListItemTitle">
+                    <span _ngcontent-c2="" class="unicodeBulletForList">•</span>Introduction
+                </span>
+
+                <!----><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/5">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 01: Introduction to Game Theory
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">12:36</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/01-intro-gt.pdf?userid=26743&amp;lid=5&amp;filename=01-intro-gt.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/6">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 02: Introduction to Mechanism Design
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">09:41</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/02-intro-md.pdf?userid=26743&amp;lid=6&amp;filename=02-intro-md.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span>
+            </li><li _ngcontent-c2="">
+                <span _ngcontent-c2="" class="weekListItemTitle">
+                    <span _ngcontent-c2="" class="unicodeBulletForList">•</span>Game Theory
+                </span>
+
+                <!----><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/7">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 03: The Game of Chess
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">14:58</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/03-chess-intro.pdf?userid=26743&amp;lid=7&amp;filename=03-chess-intro.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/8">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 04: Proof of the Chess Theorem
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">07:20</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/04-chess-proof.pdf?userid=26743&amp;lid=8&amp;filename=04-chess-proof.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/9">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 05: Normal Form Games
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">12:32</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/05-nfg-intro.pdf?userid=26743&amp;lid=9&amp;filename=05-nfg-intro.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/26">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Week 1 discussions -- Aug 11, 2021
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">41:09</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span>
+            </li>
+        </ul>
+    </div>
+</div><div _ngcontent-c2="">
+    <div _ngcontent-c2="" class="weekItem">
+        <div _ngcontent-c2="" class="triangleWrapper">
+            <img _ngcontent-c2="" class="triangleIcon" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/triangleRight@2X-01.png">
+        </div>
+        <div _ngcontent-c2="" class="weekWrapper">
+            Week 2
+        </div>
+    </div>
+    <div _ngcontent-c2="" class="weekDetailsBox" style="display: none;">
+        <ul _ngcontent-c2="" class="weekList">
+            <!----><li _ngcontent-c2="">
+                <span _ngcontent-c2="" class="weekListItemTitle">
+                    <span _ngcontent-c2="" class="unicodeBulletForList">•</span>Game Theory
+                </span>
+
+                <!----><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/14">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 06: Dominance
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">18:00</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/06-dominance.pdf?userid=26743&amp;lid=14&amp;filename=06-dominance.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/15">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 07: Nash Equilibrium
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">15:34</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/07-equilibrium.pdf?userid=26743&amp;lid=15&amp;filename=07-equilibrium.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/16">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 08: Maxmin Strategies
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">12:35</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/08-maxmin.pdf?userid=26743&amp;lid=16&amp;filename=08-maxmin.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/17">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 09: Iterated Elimination of Dominated Str...
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">10:10</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/09-iter-elimination.pdf?userid=26743&amp;lid=17&amp;filename=09-iter-elimination.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/18">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 10: Preservation of PSNE
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">08:28</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/10-preservation-eq.pdf?userid=26743&amp;lid=18&amp;filename=10-preservation-eq.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/19">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 11: Matrix Games
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">12:57</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/11-matrix.pdf?userid=26743&amp;lid=19&amp;filename=11-matrix.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span><span _ngcontent-c2="">
+
+                    
+                    <!----><div _ngcontent-c2="" class="lectureItem completeRowLectureColorWatched">
+                        <a _ngcontent-c2="" href="https://hello.iitk.ac.in/cs711a21/#/lecture/20">
+                            <div _ngcontent-c2="" class="lectureInfoBoxWatched">
+                                <div _ngcontent-c2="" class="containerItemImageWrapper">
+                                    <div _ngcontent-c2="" class="middleImageWrapper">
+                                        <img _ngcontent-c2="" class="inactive" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideo@2X-01.png">
+                                        <img _ngcontent-c2="" class="active" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/LectureUnitVideoHover@2X-01.png">
+                                    </div>
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxText">
+                                    Module 12: Maxmin and PSNE in Matrix Games
+                                </div>
+                                <div _ngcontent-c2="" class="lectureInfoBoxLength"><!----><span _ngcontent-c2="">08:15</span></div>
+                            </div>
+                        </a>
+                        <div _ngcontent-c2="" class="lectureInfoBoxResourcesWatched">
+                            <!----><app-split-resources _ngcontent-c2="" _nghost-c3=""><!----><span _ngcontent-c3="">
+    <!---->
+    <!----><a _ngcontent-c3="" target="_blank" title="splitResourcesData.altText" href="https://hello.iitk.ac.in/sites/default/files/cs711a21/12-maxmin-psne.pdf?userid=26743&amp;lid=20&amp;filename=12-maxmin-psne.pdf">
+        <img _ngcontent-c3="" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/PDFIcon.png">
+    </a>
+</span></app-split-resources>
+                        </div> 
+                    </div>
+
+                    
+                    <!---->
+
+
+                    
+                    <!---->
+
+                    
+                    <!---->
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<!---->
+</app-home>
+        </div>
+    </div>
+    
+</div>
+
+
+<!---->
+
+
+<!---->
+
+<!---->
+
+
+<!----></app-root><script src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/ckeditor.js.download"></script><script>CKEDITOR.env.isCompatible = true;</script><script type="text/javascript" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/MathJax.js.download"></script><!-- This is for Custom Choose File Button in Dialog Boxes --><script src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/si.files.js.download"></script><script type="text/javascript">SI.Files.stylizeAll();</script><!-- CurrentVersion ?v=1.3--><script type="text/javascript" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/inline.318b50c57b4eba3d437b.bundle.js.download"></script><script type="text/javascript" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/polyfills.654e3945d377377a0342.bundle.js.download"></script><script type="text/javascript" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/scripts.d0b99e42076a201019e9.bundle.js.download"></script><script type="text/javascript" src="./CS711A_ Introduction To Game Theory And Mechanism Design_files/main.99e04c98f8150a57a242.bundle.js.download"></script><div id="volume-booster-visusalizer">
+                    <div class="sound">
+                        <div class="sound-icon"></div>
+                        <div class="sound-wave sound-wave_one"></div>
+                        <div class="sound-wave sound-wave_two"></div>
+                        <div class="sound-wave sound-wave_three"></div>
+                    </div>
+                    <div class="segments-box">
+                        <div data-range="1-20" class="segment"><span></span></div>
+                        <div data-range="21-40" class="segment"><span></span></div>
+                        <div data-range="41-60" class="segment"><span></span></div>
+                        <div data-range="61-80" class="segment"><span></span></div>
+                        <div data-range="81-100" class="segment"><span></span></div>
+                    </div>
+                </div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
