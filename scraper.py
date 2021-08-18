@@ -65,7 +65,7 @@ def write_data(n):
         res.write(x + "\n")
     res.close()
 
-    print("Done")
+    print("Done writing the csv.")
 
 
 if __name__ == "__main__":
